@@ -1,0 +1,11 @@
+body {
+  background: url("../img/escheresque_ste.png");
+}
+
+img{
+    width:50%;
+}
+
+p, h1, a {
+    color:white;
+}
