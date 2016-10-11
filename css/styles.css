@@ -9,3 +9,7 @@ img{
 p, h1, a {
     color:white;
 }
+
+#logo {
+    width:10%;
+}
