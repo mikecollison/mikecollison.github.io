@@ -2,52 +2,118 @@
 /* YOUR STYLES */
 /***************/
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    background-image: url("../img/nami.png");
+}
 /* Color Palette */
 .color-1 {
-    background: red;
+    background: #2e5370;
 }
 
 .color-2 {
-    background: white;
+    background: #1b5ead;
 }
 
 .color-3 {
-    background: blue;
+    background: #2e2f33;
+}
+
+.color-4 {
+    background: #e48a2a;
+}
+
+.color-5 {
+    background: #eeeeee;
 }
 
 /* Textures or Patterns*/
 .pattern-1 {
-    background: url("../img/flag.png");
+    background: url("../img/nami.png");
 }
 
 .pattern-2 {
-    background: url("../img/feathers.jpg");
+    background: url("../img/binding_dark.png")
 }
+
+.pattern-3 {
+    background: url("../img/hexabump.png");
+}
+
+.pattern-4 {
+    background: url("../img/escheresque_ste.png");
+}
+
+.pattern-5 {
+    background: url("../img/crossword.png");
+}
+
 
 /* Imagery */
 
+.imagery-1 {
+    background-image: url("../img/android.jpg");
+    width: 300px;
+    height: 200px;
+    background-size:cover;
+}
 
+.imagery-2 {
+    background-image: url("../img/binary.jpg");
+    width: 300px;
+    height: 200px;
+    background-size:cover;
+}
+
+.imagery-3 {
+    background-image: url("../img/city.jpeg");
+    width: 300px;
+    height: 200px;
+    background-size:cover;
+}
+
+.imagery-4 {
+    background-image: url("../img/ship.jpg");
+    width: 300px;
+    height: 200px;
+    background-size:cover;
+}
+
+.imagery-5 {
+    background-image: url("../img/skull.jpg");
+    width: 300px;
+    height: 200px;
+    background-size:cover;
+}
 /* Icons */
 
+.icon-1 > img {
+    max-width: 50%;
+    fill: red;
+}
 
 /* Navigation */
 
 a:link, a:visited {
-    color: blue;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #1b5ead;
     text-transform: uppercase;
 }
 
 a:hover {
-    background: red;
-    margin-left: 10px;
+    color: #2e5370;
 }
 
 a:active {
-    color: white;
-    background: blue;
+    color: #e48a2a;
 }
+
 /* Typography */
 
-p {
-    font-family: 'Lobster', cursive;
+p, a, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #eeeeee;
 }
+
+
