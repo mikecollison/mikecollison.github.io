@@ -2,7 +2,10 @@
 /* YOUR STYLES */
 /***************/
 
+/* GLOBAL */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
 body {
     background-image: url("../img/nami.png");
 }
@@ -52,35 +55,35 @@ body {
 /* Imagery */
 
 .imagery-1 {
-    background-image: url("../img/android.jpg");
+/*    background-image: url("../img/android.jpg");*/
     width: 300px;
     height: 200px;
     background-size:cover;
 }
 
 .imagery-2 {
-    background-image: url("../img/binary.jpg");
+/*    background-image: url("../img/binary.jpg");*/
     width: 300px;
     height: 200px;
     background-size:cover;
 }
 
 .imagery-3 {
-    background-image: url("../img/city.jpeg");
+/*    background-image: url("../img/city.jpeg");*/
     width: 300px;
     height: 200px;
     background-size:cover;
 }
 
 .imagery-4 {
-    background-image: url("../img/ship.jpg");
+/*    background-image: url("../img/ship.jpg");*/
     width: 300px;
     height: 200px;
     background-size:cover;
 }
 
 .imagery-5 {
-    background-image: url("../img/skull.jpg");
+/*    background-image: url("../img/skull.jpg");*/
     width: 300px;
     height: 200px;
     background-size:cover;
@@ -110,8 +113,13 @@ a:active {
 
 /* Typography */
 
-p, a, h1, h2, h3, h4, h5, h6 {
+p, a {
     font-family: 'Roboto', sans-serif;
+    color: #eeeeee;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
     color: #eeeeee;
 }
 
