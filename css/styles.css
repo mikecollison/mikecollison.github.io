@@ -4,23 +4,58 @@ body {
   background: url("../img/escheresque_ste.png");
 }
 
-img {
-    width:50%;
-}
-
-body {
-    padding: 1em;
-}
-
 * {
     color: #eeeeee;
     font-family: 'Merriweather', serif;
     font-weight: 300;
+    margin: 0;
+    padding: 0;
 }
 
-article {
+@media screen and (max-width:25.75em) {
+    aside {
+        padding-top: 10em;
+    }
+}
+
+@media screen and (max-width:25.625em) {
+    aside {
+        padding-top: 15em;
+    }
+}
+
+@media screen and (max-width: 3.5625em) {
+    aside {
+        padding-top: 17em;
+    }
+}
+
+@media screen and (min-width: 25.8125em) {
+    aside {
+        padding-top: 8em;
+    }
+}
+
+body article, body aside {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+body {
+    margin-bottom: 10em;
+}
+
+body article {
     display: inline-block;
     min-height: 16em;
+/*    padding: 1em;*/
 }
 
 aside p {
@@ -36,10 +71,6 @@ h1, h2, h3 {
     font-weight: 300;
 }
 
-h1 {
-    font-size: 4em;
-}
-
 h2 {
     font-size: 2em;
 }
@@ -53,30 +84,22 @@ h3 {
     width:10%;
 }
 
-#mike_resume {
-    float: left;
-    width: 12em;
-}
-
-aside {
+ aside {
+/*    padding-top: 8em;*/
+    padding-left: 1em;
     display: block;
-    position: relative;
-}
+}   
 
 aside p {
     display: inline;
-    position: absolute;
-    min-width: 32em;
-}
-
-#navigation {
-    padding-left: 0em;
 }
 
 #navigation li {
     list-style: none;
     display: inline;
     padding-right: .5em;
+    padding-left: .5em;
+    padding-top: 0em;
 }
 
 #navigation li a {
@@ -93,27 +116,21 @@ article h3 {
     display: inline;
 }
 
-#location {
-    justify-content: center;
-    display: inline;
-    margin: .5em;
-}
-
-#dates {
-    justify-content: flex-end;
-    display: inline;
-    margin: .5em;
+article li {
+    padding-left: 1em;
 }
 
 #intro {
-    max-height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-ul {
+article ul {
     margin-top: .25em;
+    padding-left: 1em;
 }
 
-h4 {
+h4, h3 {
     margin: 0em;
 }
 
@@ -127,4 +144,24 @@ nav ul li a:hover {
 
 nav ul li a:active {
     color: #e48a2a;
+}
+
+#mike_resume {
+    display: flex;
+    flex: 0 0 auto;
+    width: 25%;
+    height: 25%;
+    max-width: 10em;
+}
+
+nav {
+    background-image: url("../img/binding_dark.png");
+    text-align: center;
+    width: 100%;
+    position: fixed;
+}
+
+nav h1 {
+    font-size: 4em;
+    padding-bottom: 0em;
 }
