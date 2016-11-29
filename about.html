@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>About Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css"/>    
-    </head>
+        </head>
     <body>
-    <nav>
+    <nav id="navigation">
         <h1>Mike Collison</h1>
         <ul id="navigation">
             <li><a href="index.html">Home</a></li>
@@ -43,27 +44,32 @@
         </ul>
             <h2>Work Experience</h2>
             <hr>
-            <h3 class="position">IT Pro Assistant</h3>
-            <h3 class="location">Eastern Washington University</h3>
-            <h3 class="dates">May 2016 - Present</h3>
+            <div class="container">
+                <h3>IT Pro Assistant</h3>
+                <h3>Eastern Washington University</h3>
+                <h3>May 2016 - Present</h3>
+            </div>
             <ul>
                 <li>Primarily provided assistance to IT Professional supporting Business/ Auxiliary Services.</li>
                 <li>Configured computers, printers, POS systems, and card readers.</li>
                 <li>Presented information on services provided by EWU’s TechFee.</li>
-            </ul>
-
-            <h3 class="position">Videographer &amp; Video Editor</h3>
-            <h3 class="location">Eastern Washington University</h3>
-            <h3 class="dates">August 2015 - Present (as needed)</h3>
+       </ul>
+           <div class="container">
+               <h3>Videographer &amp; Video Editor</h3>
+               <h3>Eastern Washington University</h3>
+               <h3>August 2015 - Present (as needed)</h3> 
+           </div>
+            
             <ul>
                 <li>Camera operator and video editor when requested by Library Administration.</li>
                 <li>Helped create a video series providing information on services offered by EWU Libraries, as well as videos for an annual fundraising even hosted in the JFK Library.</li>
                 <li>Developed a more efficient work-flow for the video editing process during this time.</li>
             </ul>
-
-            <h3 class="position">Computer Lab Consultant</h3>
-            <h3 class="location">Eastern Washington University</h3>
-            <h3 class="dates">September 2012 - May 2016</h3>
+            <div class="container">
+                <h3>Computer Lab Consultant</h3>
+                <h3>Eastern Washington University</h3>
+                <h3>September 2012 - May 2016</h3>
+            </div>
             <ul>
                 <li>Assisted clients in troubleshooting and use of computer software, peripherals, and recording studio equipment.</li>
                 <li>Helped assemble computer classrooms during Patterson Hall construction.</li>
@@ -72,9 +78,11 @@
             
         <h2>Volunteered Service</h2>
             <hr>
-            <h3 class="position">Judicial Board Member</h3>
-            <h3 class="location">Pi Lambda Phi Fraternity – WA Epsilon Alpha</h3>
-            <h3 class="dates">October 2012 - Present</h3>
+               <div class="container">
+                   <h3>Judicial Board Member</h3>
+                   <h3>Pi Lambda Phi Fraternity – WA Epsilon Alpha</h3>
+                   <h3>October 2012 - November 2016</h3>
+               </div>
             <ul>
                 <li>Elected to oversee hearings regarding conflict management and accusations of misconduct.</li>
                 <li>Trusted in understanding circumstances to resolve conflict or determine fault &amp; appropriate sanctions.</li>
@@ -83,4 +91,14 @@
 
     </article>
     </body>
+<!--
+        <script>function padFunction() {
+            "use strict";
+            var navHeight = document.getElementById('navigation').scrollHeight;
+            document.getElementById('intro').style.paddingTop = (navHeight + 16) + 'px';
+            }
+            padFunction();
+            window.addEventListener('resize', padFunction);
+        </script>
+-->
 </html>
