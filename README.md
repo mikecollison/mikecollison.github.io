@@ -1,2 +1,4 @@
 # mikecollison.github.io
-My awesome Website
+The stylesheet contains code from "animate.css" from GitHub repository created by Daniel Eden
+https://github.com/daneden/animate.css
+
