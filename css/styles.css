@@ -170,14 +170,6 @@ h4, h3 {
     margin: 0em;
 }
 
-nav ul li a:hover {
-    color: #1b5ead;
-}
-
-nav ul li a:active {
-    color: #e48a2a;
-}
-
 #mike_resume {
     display: flex;
     flex: 0 0 auto;
