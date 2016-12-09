@@ -10,6 +10,10 @@ body {
     box-sizing: border-box;
 }
 
+.portfolio {
+    background-image: url("../img/hexabump.png");
+}
+
 main {
     padding-top: 20em;
     padding-left: 4em;
@@ -178,6 +182,14 @@ h4, h3 {
     max-width: 10em;
 }
 
+ul+h3 {
+    margin-bottom: 2em;
+}
+
+ul+h2 {
+    margin-bottom: 2em;
+}
+
 nav {
     background-image: url("../img/binding_dark.png");
     text-align: center;
@@ -321,7 +333,6 @@ li {
 }
 
 figure {
-  background: none;  
   /* Child & Also Parent   */
   display: flex;
   flex-flow: row wrap;
@@ -341,7 +352,7 @@ figure > a {
     margin-top: 1vh;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 44em) {
     figure > a {
         width: 50%;
         margin-top: .25em;
@@ -382,7 +393,7 @@ figure > a {
   min-height: 50vh;
   justify-content: center;
   align-items: center;  
-  animation: zoomIn 1s;
+/*  animation: zoomIn 1s;*/
 }
 
 .overlay:target img {
@@ -417,7 +428,7 @@ textarea {
 }
 
 input[type=submit] {
-  background: #2e5370;
+  background: #1b5ead;
   border: none;
   border-radius: .25em;
   padding: .5em 1em;
@@ -429,4 +440,16 @@ input:focus, textarea:focus {
   background: #d6f5f5;
   transition: background .5s;
   outline: none; 
+}
+
+input[type=submit]:hover {
+    background: #2e5370;
+}
+
+input[type=submit]:link {
+    background: #1b5ead;
+}
+
+input[type=submit]:active, input[type=submit]:focus {
+    background: #e48a2a;
 }
