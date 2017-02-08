@@ -89,6 +89,7 @@ nav ul li a {
     justify-content: space-between;
     height: auto;
     flex-wrap: wrap;
+/*    margin-top: .75em;*/
 }
 
 body {
@@ -114,18 +115,20 @@ h1, h2, h3 {
 
 h2 {
     font-size: 2em;
+    margin-top: 1em;
 }
 
 h3 {
     font-size: 1.2em;
     font-weight: 400;
+    margin-top: .5em;
 }
 
 #logo {
     width:10%;
 }
 
- aside {
+aside {
     display: block;
 }   
 
@@ -140,6 +143,10 @@ aside p {
     padding-right: .5vw;
     padding-left: .5vw;
     padding-top: 0em;
+}
+
+article .container {
+    display: block;
 }
 
 #navigation li a {
@@ -172,6 +179,7 @@ article ul {
 
 h4, h3 {
     margin: 0em;
+    margin-top: .25em;
 }
 
 #mike_resume {
@@ -238,43 +246,6 @@ nav {
     background: url("../img/crossword.png");
 }
 
-
-/* Imagery */
-
-.imagery-1 {
-/*    background-image: url("../img/android.jpg");*/
-    width: 300px;
-    height: 200px;
-    background-size:cover;
-}
-
-.imagery-2 {
-/*    background-image: url("../img/binary.jpg");*/
-    width: 300px;
-    height: 200px;
-    background-size:cover;
-}
-
-.imagery-3 {
-/*    background-image: url("../img/city.jpeg");*/
-    width: 300px;
-    height: 200px;
-    background-size:cover;
-}
-
-.imagery-4 {
-/*    background-image: url("../img/ship.jpg");*/
-    width: 300px;
-    height: 200px;
-    background-size:cover;
-}
-
-.imagery-5 {
-/*    background-image: url("../img/skull.jpg");*/
-    width: 300px;
-    height: 200px;
-    background-size:cover;
-}
 /* Icons */
 
 .icon-1 > img {
@@ -314,13 +285,6 @@ h1 {
     font-size: 4em;
 }
 
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
 
 li {
     color: #eeeeee;
@@ -340,7 +304,6 @@ figure {
   align-items: center;
 }
 
-/* Specific Gallery Styling. Have Fun! */
 figure img {
     max-width: 100%;
     max-height: 100%;
@@ -393,7 +356,7 @@ figure > a {
   min-height: 50vh;
   justify-content: center;
   align-items: center;  
-/*  animation: zoomIn 1s;*/
+  animation: fadeIn 1s;
 }
 
 .overlay:target img {
